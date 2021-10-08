@@ -1,4 +1,4 @@
-export const ContextMenuOption={
+ const ContextMenuOption={
     rename:{
         name:"Rename"
     },
@@ -9,3 +9,4 @@ export const ContextMenuOption={
         name:"Delete"
     }
 }
+export default ContextMenuOption

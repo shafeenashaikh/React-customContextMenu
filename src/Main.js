@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import List from './data';
 import styled from 'styled-components'
+import ContextMenu from './Components/contextMenu';
+import ContextList from './Constant/contextMenuOptions'
 
 class Main extends Component {
 
@@ -12,6 +14,14 @@ class Main extends Component {
     }
     render() {
         return (
+            <AppContainer>
+            <ContextMenu
+                contextItem={[
+                    ContextList.rename,
+                    ContextList.delete,
+                    ContextList.copy
+                ]}
+            />
             <div>
                 {
                 List.map(item=>(
@@ -27,6 +37,7 @@ class Main extends Component {
                     </ItemListContainer>
                 ))}
             </div>
+            </AppContainer>
         );
     }
 }
