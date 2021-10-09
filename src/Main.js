@@ -19,7 +19,7 @@ class Main extends Component {
                 contextItem={[
                     ContextList.rename,
                     ContextList.delete,
-                    ContextList.copy
+                    ContextList.copy,
                 ]}
             />
             <div>

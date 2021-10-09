@@ -3,7 +3,7 @@
         name:"Rename"
     },
     copy:{
-        copy:"Copy"
+        name:"Copy"
     },
     delete:{
         name:"Delete"
